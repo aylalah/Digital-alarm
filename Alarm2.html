@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Alerm</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+	<style type="text/css">
+		div#carousel{
+			width: 100%; 
+			height: 100%;
+			background-image: url("image/image1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;		
+	}	
+	td#time{
+		text-align: center;
+		font-size: 8vw;
+		font-weight:bold;
+		font-family:"verdana";
+		text-shadow: 5px 5px #5982B0;
+		color:#ffffff;
+		transition-delay: 5s;
+		transition: left
+	}
+	#brand{
+		text-align: center;
+		font-weight: bold;
+		font-size: 2vw;
+		font-family: "arial";
+		color:#ffffff;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<table class="table table-hover" border="1" style="margin-top: 80px">
+		<tr>
+			<td>
+				<div  id="carousel">
+					<div class="container">
+		<table align="center">
+			<thead>
+				<tr>
+					<td id="brand">JOYTUNE ALARM</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align="center" id="time"></td>
+				</tr>
+				<tr>
+					<td align="center">
+						<input type="time" name="" id="almtym" style="margin-right: 20px"><input type="text" name="" id="msg" placeholder="Text your message here" style="width: 500px">
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<button type="button" class="btn btn-outline-dark" onclick="Set('')">Set alarm</button>
+						<button type="button" class="btn btn-outline-dark" onclick="stop('')">Stop alarm</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+	
+</body>
+</html>
+	
+	<script type="text/javascript"> 
+		var alarm1 = new Audio("sound/alarm1.mp3")
+		var sec= 0;
+		var tm ;
+		var a;
+		var mg;
+		// for (var i =1; i<=60; i++) {
+		// 	hours.value=i;
+		// }
+		function Timer()
+		{
+			var d= new Date();
+			var h= d.getHours();
+			var m= d.getMinutes();
+			var s= d.getSeconds();
+			if (m<=9) {m="0"+m;}
+			if (s<=9) {s="0"+s}
+			if (h<=9) {h="0"+h}
+			window.setTimeout("Timer()",1000);
+			document.getElementById('time').innerHTML=h+":"+m+":"+s;
+			tm = h+":"+m;
+			if (a==tm) {alarm1.play()
+			if (s==01) {alert(msg.value)}
+			}
+			
+				// alert(tm+"==="+a);
+		}
+		Timer();
+		function Set()
+		{
+			a=almtym.value;
+			var mg= msg.value;
+			
+		}		
+
+		function stop()
+		{
+			a=0;
+			alarm1.pause()
+		}
+		
+	
+
+	</script>
