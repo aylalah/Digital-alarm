@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alerm</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+
+	<style type="text/css">
+		div#carousel{
+			width: 100%; 
+			height: 100%;
+			background-image: url("image/image10.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;		
+	}	
+	td#time{
+		text-align: center;
+		font-size: 8vw;
+		font-weight:bold;
+		font-family:"verdana";
+		text-shadow: 8px 8px 25px #E8BC45, 0 0 25px #E8BC45, 0 0 25px #E8BC45;
+		color:#FFF586;
+		transition-delay: 5s;
+		transition: left
+	}
+	#brand{
+		text-align: center;
+		font-weight: bold;
+		font-size: 2vw;
+		font-family: "arial";
+		color:#FFF680;
+	}
+
+	input{
+		border-color: #FFE277;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<table class="table table-hover" border="1" style="margin-top: 80px">
+		<tr>
+			<td>
+				<div  id="carousel">
+					<div class="container">
+		<table align="center">
+			<thead>
+				<tr>
+					<td id="brand">JOYTUNE ALARM</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align="center" id="time"></td>
+				</tr>
+				<tr>
+					<td align="center">
+						<!-- <input type="time" name="" id="almtym" style="margin-right: 20px"> -->
+
+						<form class="form-inline" role="form" style="">
+					    <div class="form-group">
+					      <select class="form-control"  id="hours" style="margin-right:5px; width:50px; padding-left:4px; padding-right: 4px"  >
+					      	<option>00</option>
+					        <option>01</option>
+					        <option>02</option>
+					        <option>03</option>
+					        <option>04</option>
+					        <option>05</option>
+					        <option>06</option>
+					        <option>07</option>
+					        <option>08</option>
+					        <option>09</option>
+					        <option>10</option>
+					        <option>11</option>	
+					        <option>12</option>
+					        <option>13</option>
+					        <option>14</option>
+					        <option>15</option>
+					        <option>16</option>
+					        <option>17</option>
+					        <option>18</option>
+					        <option>19</option>
+					        <option>20</option>
+					        <option>21</option>
+					        <option>22</option>
+					        <option>23</option>	
+					      </select>
+					      <div style="margin-right:5px; color:white; font-weight: bold; font-size: 20px;"> :</div>
+					      <select class="form-control" id="mins" style="margin-right:5px; width:50px; padding-left:4px; padding-right: 4px">
+					      	<option>00</option>
+					        <option>01</option>
+					        <option>02</option>
+					        <option>03</option>
+					        <option>04</option>
+					        <option>05</option>
+					        <option>06</option>
+					        <option>07</option>
+					        <option>08</option>
+					        <option>09</option>
+					        <option>10</option>
+					        <option>11</option>
+					        <option>12</option>
+					        <option>13</option>
+					        <option>14</option>
+					        <option>15</option>
+					        <option>16</option>
+					        <option>17</option>
+					        <option>18</option>
+					        <option>19</option>
+					        <option>20</option>
+					        <option>21</option>
+					        <option>22</option>
+					        <option>23</option>
+					        <option>24</option>
+					        <option>25</option>
+					        <option>26</option>
+					        <option>27</option>
+					        <option>28</option>
+					        <option>29</option>
+					        <option>30</option>
+					        <option>31</option>
+					        <option>32</option>
+					        <option>33</option>
+					        <option>34</option>
+					        <option>35</option>
+					        <option>36</option>
+					        <option>37</option>
+					        <option>38</option>
+					        <option>39</option>
+					        <option>40</option>
+					        <option>41</option>
+					        <option>42</option>
+					        <option>43</option>
+					        <option>44</option>
+					        <option>45</option>
+					        <option>46</option>
+					        <option>47</option>
+					        <option>48</option>
+					        <option>49</option>
+					        <option>50</option>
+					        <option>51</option>
+					        <option>52</option>
+					        <option>53</option>
+					        <option>54</option>
+					        <option>55</option>
+					        <option>56</option>
+					        <option>57</option>
+					        <option>58</option>
+					        <option>59</option>				        
+					      </select>
+					      <div style="margin-right:5px; color:white; font-weight: bold; font-size: 20px;"> :</div>
+					      <select class="form-control" id="secs" style="margin-right:5px; width:50px; padding-left:4px; padding-right: 4px">
+					      	<option>00</option>
+					        <option>01</option>
+					        <option>02</option>
+					        <option>03</option>
+					        <option>04</option>
+					        <option>05</option>
+					        <option>06</option>
+					        <option>07</option>
+					        <option>08</option>
+					        <option>09</option>
+					        <option>10</option>
+					        <option>11</option>
+					        <option>12</option>
+					        <option>13</option>
+					        <option>14</option>
+					        <option>15</option>
+					        <option>16</option>
+					        <option>17</option>
+					        <option>18</option>
+					        <option>19</option>
+					        <option>20</option>
+					        <option>21</option>
+					        <option>22</option>
+					        <option>23</option>
+					        <option>24</option>
+					        <option>25</option>
+					        <option>26</option>
+					        <option>27</option>
+					        <option>28</option>
+					        <option>29</option>
+					        <option>30</option>
+					        <option>31</option>
+					        <option>32</option>
+					        <option>33</option>
+					        <option>34</option>
+					        <option>35</option>
+					        <option>36</option>
+					        <option>37</option>
+					        <option>38</option>
+					        <option>39</option>
+					        <option>40</option>
+					        <option>41</option>
+					        <option>42</option>
+					        <option>43</option>
+					        <option>44</option>
+					        <option>45</option>
+					        <option>46</option>
+					        <option>47</option>
+					        <option>48</option>
+					        <option>49</option>
+					        <option>50</option>
+					        <option>51</option>
+					        <option>52</option>
+					        <option>53</option>
+					        <option>54</option>
+					        <option>55</option>
+					        <option>56</option>
+					        <option>57</option>
+					        <option>58</option>
+					        <option>59</option>				        
+					      </select>
+					      <select class="form-control" style="margin-right:5px; width:56px; padding-left:4px; padding-right: 4px">
+					        <option>AM</option>
+					        <option>PM</option>
+					      </select>
+					  </div>
+					  <input type="text" name="" id="msg" placeholder="Text your message here" style="width: 500px; margin-left: 20px">
+					</form>	
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<button type="button" class="btn btn-outline-dark" onclick="Set('')">Set alarm</button>
+						<button type="button" class="btn btn-outline-dark" onclick="stop('n')">Stop alarm</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+	
+</body>
+</html>
+	
+	<script type="text/javascript">
+		var alarm1 = new Audio("sound/alarm1.mp3");
+			alarm1.loop= true;
+		var sec= 0;
+		var tm ;
+		var a;
+		var b;
+		var mg;
+		// for (var i =1; i<=60; i++) {
+		// 	hours.value=i;
+		// }
+		function Timer()
+		{
+			var d= new Date();
+			var h= d.getHours();
+			var m= d.getMinutes();
+			var s= d.getSeconds();
+			if (m<=9) {m="0"+m;}
+			if (s<=9) {s="0"+s}
+			if (h<=9) {h="0"+h}
+			window.setTimeout("Timer()",1000);
+			document.getElementById('time').innerHTML=h+":"+m+":"+s;
+			tm = h+":"+m;
+			tmb = h+":"+m+":"+s;
+			if (a==tmb) { alarm1.play()}
+			 if (b==tmb) {document.getElementById('brand').innerHTML=msg.value}
+				// alert(tmb+"==="+b);
+		
+		}
+		Timer();
+		function Set()
+		{
+			bvalue=parseInt(secs.value) + parseInt(1)
+			if (bvalue<=9) {bvalue="0"+bvalue;}
+			a=hours.value+":"+mins.value+":"+secs.value;
+			b=hours.value+":"+mins.value+":"+bvalue;
+			c=hours.value+":"+mins.value;
+			var mg= msg.value;
+		}		
+
+		function stop(p)
+		{
+			var question= prompt("PLEASE SOLVE THIS QUESSTION.                                                            In a flight of 600 km, an aircraft was slowed down due to bad weather. Its average speed for the trip was reduced by 200 km/hr and the time of flight increased by 30 minutes. The duration of the flight is: A. 1 hour B. 2 hours C. 3 hours D. 4 hours");
+		
+			if (c==tm) {question;
+				if (question=="a") {a=0; alarm1.pause();}
+
+			document.getElementById('brand').innerHTML="JOYTUNE ALARM"
+			 }
+
+		
+		} 
+		
+	
+
+	</script>
